@@ -1,0 +1,18 @@
+{
+    "name": "Serial-Iot",
+    "version": "2.0.0",
+    "description": "MakeCode package for micro:bit",
+    "license": "MIT",
+    "dependencies": {
+        "pxt-microbit": "^1.2.18",
+        "serialport": "^6.2.2"
+    },
+    "files": [
+        "serialiot.ts",
+        "README.md"
+    ],
+    "testFiles": [
+        "tests.ts"
+    ],
+    "public": true
+}
