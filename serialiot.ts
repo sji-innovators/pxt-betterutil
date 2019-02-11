@@ -9,7 +9,7 @@ namespace serialiot {
     * @param data String to send
     */
     //% blockId=sendString weight=100
-    //% block="sendString"
+    //% block="send String %data"
     export function sendString(data: string): void {
         let strLength:number = data.length
         let packets: number = Math.ceil(strLength/18)
