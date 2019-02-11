@@ -16,7 +16,7 @@ namespace serialiot {
         radio.sendString(`{"type: "header", data: {chars: ${strLength}, packets: ${packets} }'`);
 
         for (let i = 0; i < packets; i++) {
-            let sliced = data.substring(i*18, i+1*18)
+            let sliced = data.substr(i*18, i+1*18)
             console.log(sliced)
         }
 
