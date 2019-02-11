@@ -14,6 +14,12 @@ namespace serialiot {
         let strLength:number = data.length
         let packets:number = Math.ceil(strLength/18)
         radio.sendString(`{"type: "header", data: {chars: ${strLength}, packets: ${packets} }'`);
+
+        for (let i = 0; i < packets; i++) {
+            let sliced = data.substring(i*18, i+1*18)
+            console.log(sliced)
+        }
+
         return;
     }
 }
