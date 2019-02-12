@@ -1,5 +1,5 @@
-# pxt-serialiot
-### Made by SJI Innovators to simplify micro:bit radio and IOT.
+# pxt-betterutil
+### Made by SJI Innovators to simplify micro:bit MakeCode and add more functions.
 
 - Allows > 16 characters to be sent via radio using HTTP like headers
 
