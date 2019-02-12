@@ -1,7 +1,7 @@
 /**
  * Custom blocks
  */
-//% color=#2b569b weight=10 icon="\f7d9"
+//% color=#2b569b weight=10 icon="\uf7d9"
 
 namespace betterutil {
     /**
