@@ -1,12 +1,12 @@
 {
-    "name": "Serial-IOT",
+    "name": "betterutil",
     "version": "2.0.0",
     "description": "MakeCode package for micro:bit",
     "license": "MIT",
     "dependencies": {},
 
     "files": [
-        "serialiot.ts",
+        "main.ts",
         "README.md"
     ],
 

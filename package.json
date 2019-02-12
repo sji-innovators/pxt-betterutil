@@ -1,5 +1,5 @@
 {
-    "name": "Serial-Iot",
+    "name": "betterutil",
     "version": "2.0.0",
     "description": "MakeCode package for micro:bit",
     "license": "MIT",
@@ -8,7 +8,7 @@
         "serialport": "^6.2.2"
     },
     "files": [
-        "serialiot.ts",
+        "main.ts",
         "README.md"
     ],
     "testFiles": [

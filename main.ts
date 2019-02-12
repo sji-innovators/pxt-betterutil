@@ -1,9 +1,9 @@
 /**
  * Custom blocks
  */
-//% color=#2b569b weight=10 icon="\uf287"
+//% color=#2b569b weight=10 icon="\f7d9"
 
-namespace serialiot {
+namespace betterutil {
     /**
     *
     * @param data String to send
