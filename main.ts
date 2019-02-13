@@ -26,7 +26,7 @@ namespace betterutil {
     * @param str String to split
     */
     //% blockId=splitStr weight=100
-    //% block="Split string %str"
+    //% block="Split string %str by %delimiter and removeEmptyItems %removeEmptyItems"
     export function splitStr(str: string, delimiter: string, removeEmptyItems: boolean=true): Array<string> {
         if (!delimiter || delimiter.length === 0) return [str];
         if (!str || str.length === 0) return [];
