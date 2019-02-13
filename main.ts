@@ -27,16 +27,9 @@ namespace betterutil {
     */
     //% blockId=readString weight=100
     //% block="reads String %data from radio"
-    export function readString(data: string): any {
+    export function readString(data: string): Array<string> {
         let parts = splitStr(data, "-")
-        if(parts.length != 3)return;
-        let output =
-            {
-            "type": parts[0],
-            "body": parts[1],
-            "last": parts[2]
-            };
-        return output;
+        return parts;
     }
     /**
     *
