@@ -17,7 +17,7 @@ namespace betterutil {
 
         for (let i = 0; i < packets; i++) {
             let sliced = data.substr(i*5, i+1*5)
-            radio.sendString(`content-${sliced}-${i}`, 121);
+            radio.sendValue(`content-${sliced}-${i}`, 121);
         }
         return;
     }
