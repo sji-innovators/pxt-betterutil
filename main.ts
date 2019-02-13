@@ -21,4 +21,27 @@ namespace betterutil {
         }
         return;
     }
+    /**
+    *
+    * @param str String to split
+    */
+    //% blockId=splitStr weight=100
+    //% block="Split string %str"
+    export function splitStr(str: string, delimiter: string, removeEmptyItems: boolean=true): Array<string> {
+        if (!delimiter || delimiter.length === 0) return [str];
+        if (!str || str.length === 0) return [];
+        let result = [];
+        let j = 0;
+        let lastStart = 0;
+        for (var i=0;i<=str.length;) {
+            if (i == str.length || str.substr(i,delimiter.length) == delimiter) {
+                if (!removeEmptyItems || lastStart != i) {
+                    result[j++] = str.substr(lastStart, i-lastStart);
+                }
+                lastStart = i+delimiter.length;
+                i += delimiter.length;
+            } else i++;
+        }
+        return result;
+    }
 }
