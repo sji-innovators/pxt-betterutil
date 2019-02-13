@@ -28,7 +28,7 @@ namespace betterutil {
     //% blockId=readString weight=100
     //% block="reads String %data from radio"
     export function readString(data: string): any {
-        let parts = betterutil.splitStr(data, "-")
+        let parts = splitStr(data, "-")
         if(parts.length != 3)return;
         let output:any =
             {
