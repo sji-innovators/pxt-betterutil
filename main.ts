@@ -30,7 +30,7 @@ namespace betterutil {
     export function splitStr(str: string, delimiter: string, removeEmptyItems: boolean=true): Array<string> {
         if (!delimiter || delimiter.length === 0) return [str];
         if (!str || str.length === 0) return [];
-        let result = [];
+        let result:Array<string> = [];
         let j = 0;
         let lastStart = 0;
         for (let i=0;i<=str.length;) {
