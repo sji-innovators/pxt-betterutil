@@ -30,7 +30,7 @@ namespace betterutil {
     export function readString(data: string): any {
         let parts = splitStr(data, "-")
         if(parts.length != 3)return;
-        let output:any =
+        let output =
             {
             "type": parts[0],
             "body": parts[1],
