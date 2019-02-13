@@ -33,7 +33,7 @@ namespace betterutil {
         let result = [];
         let j = 0;
         let lastStart = 0;
-        for (var i=0;i<=str.length;) {
+        for (let i=0;i<=str.length;) {
             if (i == str.length || str.substr(i,delimiter.length) == delimiter) {
                 if (!removeEmptyItems || lastStart != i) {
                     result[j++] = str.substr(lastStart, i-lastStart);
