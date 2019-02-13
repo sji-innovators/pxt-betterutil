@@ -6,20 +6,37 @@
 namespace betterutil {
     /**
     *
-    * @param data String to send
+    * @param data String to send via radio
     */
     //% blockId=sendString weight=100
     //% block="send String %data"
     export function sendString(data: string): void {
         let strLength:number = data.length
-        let packets:number = Math.ceil(strLength/18)
-        radio.sendString(`{"type": "header", "data": {chars: ${strLength}, packets: ${packets} }`);
+        let packets:number = Math.ceil(strLength/5)
+        radio.sendValue(`header-${packets}`, 121);
 
         for (let i = 0; i < packets; i++) {
-            let sliced = data.substr(i*18, i+1*18)
-            radio.sendString(`{"type": "data", "data": {payload:"${sliced}", packet:${i}`);
+            let sliced = data.substr(i*5, i+1*5)
+            radio.sendString(`content-${sliced}-${i}`, 121);
         }
         return;
+    }
+    /**
+    *
+    * @param data String to read and decode from radio
+    */
+    //% blockId=readString weight=100
+    //% block="reads String %data from radio"
+    export function readString(data: string): any {
+        let parts = splitStr(data, "-")
+        if(parts.length != 3)return;
+        let output:object =
+            {
+            "type": parts[0],
+            "body": parts[1],
+            "last": parts[2]
+            };
+        return output;
     }
     /**
     *

@@ -1,6 +1,14 @@
 # pxt-betterutil
 ### Made by SJI Innovators to simplify micro:bit MakeCode and add more functions.
 
-- Allows > 16 characters to be sent via radio using HTTP like headers
 
+##### This adds:
+- Ability to have > 16 characters sent via radio
+- String spliting by delimiter functionality
+- Parsing JSON functionality
 - Easier to send data via serial to a computer and interact with an API
+
+
+
+##### Made by the SJI Innovator team,
+##### _ora et labora_
