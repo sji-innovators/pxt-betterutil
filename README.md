@@ -3,10 +3,10 @@
 
 
 ##### This adds:
-- Ability to have > 16 characters sent via radio
-- String spliting by delimiter functionality
-- Parsing JSON functionality
-- Easier to send data via serial to a computer and interact with an API
+- [x] Ability to have > 16 characters sent via radio
+- [x] String spliting by delimiter functionality
+- [ ] Parsing JSON functionality
+- [ ] Easier to send data via serial to a computer and interact with an API
 
 
 
